@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Source photography (173 MB of unoptimised originals).
+#
+# The app serves the WebP set in public/img, generated from these by
+# scripts/optimize-images.mjs. Committing the originals would put 173 MB into git history
+# permanently — git never forgets a blob — and slow every clone, for files no build step reads.
+# Keep them in your own storage; re-run the script if you add or replace one.
+/public/hotels
