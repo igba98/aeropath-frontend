@@ -1,0 +1,35 @@
+{
+  "recordLocator": "L9BX2D",
+  "officeId": "DARTZ2100",
+  "createdAt": "2026-09-26T11:02:00.000Z",
+  "passengers": [
+    { "pnrPaxNo": 1, "surname": "KAHAMA", "givenName": "ASHA", "title": "MRS", "paxType": "ADT" },
+    { "pnrPaxNo": 2, "surname": "KAHAMA", "givenName": "JUMA", "title": "MR", "paxType": "ADT" },
+    { "pnrPaxNo": 3, "surname": "KAHAMA", "givenName": "ZAWADI", "paxType": "INF", "dateOfBirth": "2026-01-10" }
+  ],
+  "segments": [
+    {
+      "segmentNo": 3, "carrier": "ET", "flightNumber": "806", "bookingClass": "T",
+      "origin": "DAR", "destination": "ADD",
+      "departureLocal": "2026-11-14T15:40", "arrivalLocal": "2026-11-14T18:15", "arrivalDayOffset": 0,
+      "statusCode": "HK", "seats": 2
+    },
+    {
+      "segmentNo": 4, "carrier": "ET", "flightNumber": "706", "bookingClass": "T",
+      "origin": "ADD", "destination": "FRA",
+      "departureLocal": "2026-11-14T23:30", "arrivalLocal": "2026-11-15T04:40", "arrivalDayOffset": 1,
+      "statusCode": "HK", "seats": 2
+    }
+  ],
+  "tickets": [
+    { "pnrPaxNo": 1, "ticketNumber": "071-2401555001", "carrier": "ET", "currency": "USD", "amount": 980, "issuedAt": "2026-09-26" },
+    { "pnrPaxNo": 3, "ticketNumber": "071-2401555002", "carrier": "ET", "currency": "USD", "amount": 98, "issuedAt": "2026-09-26" },
+    { "pnrPaxNo": 2, "ticketNumber": "071-2401555003", "carrier": "ET", "currency": "USD", "amount": 980, "issuedAt": "2026-09-26" }
+  ],
+  "contacts": [
+    { "type": "phone", "value": "+255787654321" }
+  ],
+  "mock": {
+    "queueReason": "Ethiopian confirmed the infant (SSR INFT) on both flights."
+  }
+}

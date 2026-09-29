@@ -1,0 +1,1042 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T07:41:57+00:00",
+  "title": "Design System: Aeropath Back Office",
+  "extensions": {
+    "colorMeta": {
+      "brand-50": {
+        "role": "primary",
+        "displayName": "Brand 50",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "brand-100": {
+        "role": "primary",
+        "displayName": "Brand 100",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "brand-200": {
+        "role": "primary",
+        "displayName": "Selection Blue",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "brand-300": {
+        "role": "primary",
+        "displayName": "Brand 300 (dark-theme links and hover)",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "brand-400": {
+        "role": "primary",
+        "displayName": "Route Blue",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "brand-500": {
+        "role": "primary",
+        "displayName": "Brand 500",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "brand-600": {
+        "role": "primary",
+        "displayName": "Deep Route Blue (light primary fill)",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "brand-700": {
+        "role": "primary",
+        "displayName": "Deep Route Blue Hover",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "brand-800": {
+        "role": "primary",
+        "displayName": "Brand 800",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "brand-900": {
+        "role": "primary",
+        "displayName": "Brand 900",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "band": {
+        "role": "primary",
+        "displayName": "Selection Band",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ],
+        "dark": "#16284a"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#121826"
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Cool Canvas",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#0a0e16"
+      },
+      "canvas-2": {
+        "role": "neutral",
+        "displayName": "Canvas 2",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#1a2231"
+      },
+      "sidebar-accent": {
+        "role": "neutral",
+        "displayName": "Sidebar Hover",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#172031"
+      },
+      "table-head": {
+        "role": "neutral",
+        "displayName": "Table Head Band",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#151c2a"
+      },
+      "band-hover": {
+        "role": "neutral",
+        "displayName": "Row Hover",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#161e2d"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#e8ecf3"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#c1c9d6"
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3 (muted, AA)",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#a3adbd"
+      },
+      "ink-4": {
+        "role": "neutral",
+        "displayName": "Ink 4 (placeholder, AA)",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#8793a6"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#222b3b"
+      },
+      "rule-2": {
+        "role": "neutral",
+        "displayName": "Rule 2",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#2e3a4e"
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Rule Strong",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#52607a",
+          "#626e84",
+          "#cfd6e0",
+          "#e6e9ef",
+          "#edf0f4",
+          "#f4f6f9"
+        ],
+        "dark": "#334155"
+      },
+      "destructive": {
+        "role": "error",
+        "displayName": "Destructive Red",
+        "tonalRamp": [
+          "#3d0f09",
+          "#6b1a10",
+          "#a8281a",
+          "#c4321f",
+          "#e0513e",
+          "#ef5a47",
+          "#f7a59a",
+          "#fdecec"
+        ],
+        "dark": "#ef5a47"
+      },
+      "destructive-hover": {
+        "role": "error",
+        "displayName": "Destructive Red Hover",
+        "tonalRamp": [
+          "#3d0f09",
+          "#6b1a10",
+          "#a8281a",
+          "#c4321f",
+          "#e0513e",
+          "#ef5a47",
+          "#f7a59a",
+          "#fdecec"
+        ],
+        "dark": "#ff7461"
+      },
+      "st-green-bg": {
+        "role": "status",
+        "displayName": "Status green fill (paid, issued, verified, settled)",
+        "tonalRamp": [
+          "#0f2a1f",
+          "#1f4b37",
+          "#127347",
+          "#72d9a6",
+          "#c6ebd6",
+          "#e8f7ef",
+          "#e8f7ef",
+          "#e8f7ef"
+        ],
+        "dark": "#0f2a1f"
+      },
+      "st-green-fg": {
+        "role": "status",
+        "displayName": "Status green text",
+        "tonalRamp": [
+          "#0f2a1f",
+          "#1f4b37",
+          "#127347",
+          "#72d9a6",
+          "#c6ebd6",
+          "#e8f7ef",
+          "#e8f7ef",
+          "#e8f7ef"
+        ],
+        "dark": "#72d9a6"
+      },
+      "st-green-bd": {
+        "role": "status",
+        "displayName": "Status green border",
+        "tonalRamp": [
+          "#0f2a1f",
+          "#1f4b37",
+          "#127347",
+          "#72d9a6",
+          "#c6ebd6",
+          "#e8f7ef",
+          "#e8f7ef",
+          "#e8f7ef"
+        ],
+        "dark": "#1f4b37"
+      },
+      "st-amber-bg": {
+        "role": "status",
+        "displayName": "Status amber fill (partial, pending, unverified, owed)",
+        "tonalRamp": [
+          "#2d2210",
+          "#4f3b18",
+          "#8a4f00",
+          "#f3c46b",
+          "#f6dcae",
+          "#fff4e0",
+          "#fff4e0",
+          "#fff4e0"
+        ],
+        "dark": "#2d2210"
+      },
+      "st-amber-fg": {
+        "role": "status",
+        "displayName": "Status amber text",
+        "tonalRamp": [
+          "#2d2210",
+          "#4f3b18",
+          "#8a4f00",
+          "#f3c46b",
+          "#f6dcae",
+          "#fff4e0",
+          "#fff4e0",
+          "#fff4e0"
+        ],
+        "dark": "#f3c46b"
+      },
+      "st-amber-bd": {
+        "role": "status",
+        "displayName": "Status amber border",
+        "tonalRamp": [
+          "#2d2210",
+          "#4f3b18",
+          "#8a4f00",
+          "#f3c46b",
+          "#f6dcae",
+          "#fff4e0",
+          "#fff4e0",
+          "#fff4e0"
+        ],
+        "dark": "#4f3b18"
+      },
+      "st-red-bg": {
+        "role": "status",
+        "displayName": "Status red fill (unpaid, overdue, error)",
+        "tonalRamp": [
+          "#33161a",
+          "#5b262b",
+          "#b42318",
+          "#ff9d93",
+          "#f7cdca",
+          "#fdecec",
+          "#fdecec",
+          "#fdecec"
+        ],
+        "dark": "#33161a"
+      },
+      "st-red-fg": {
+        "role": "status",
+        "displayName": "Status red text",
+        "tonalRamp": [
+          "#33161a",
+          "#5b262b",
+          "#b42318",
+          "#ff9d93",
+          "#f7cdca",
+          "#fdecec",
+          "#fdecec",
+          "#fdecec"
+        ],
+        "dark": "#ff9d93"
+      },
+      "st-red-bd": {
+        "role": "status",
+        "displayName": "Status red border",
+        "tonalRamp": [
+          "#33161a",
+          "#5b262b",
+          "#b42318",
+          "#ff9d93",
+          "#f7cdca",
+          "#fdecec",
+          "#fdecec",
+          "#fdecec"
+        ],
+        "dark": "#5b262b"
+      },
+      "st-violet-bg": {
+        "role": "status",
+        "displayName": "Status violet fill (credit, needs Manager)",
+        "tonalRamp": [
+          "#231c42",
+          "#3b306c",
+          "#5b3cc4",
+          "#bda9ff",
+          "#ddd3fa",
+          "#f3effe",
+          "#f3effe",
+          "#f3effe"
+        ],
+        "dark": "#231c42"
+      },
+      "st-violet-fg": {
+        "role": "status",
+        "displayName": "Status violet text",
+        "tonalRamp": [
+          "#231c42",
+          "#3b306c",
+          "#5b3cc4",
+          "#bda9ff",
+          "#ddd3fa",
+          "#f3effe",
+          "#f3effe",
+          "#f3effe"
+        ],
+        "dark": "#bda9ff"
+      },
+      "st-violet-bd": {
+        "role": "status",
+        "displayName": "Status violet border",
+        "tonalRamp": [
+          "#231c42",
+          "#3b306c",
+          "#5b3cc4",
+          "#bda9ff",
+          "#ddd3fa",
+          "#f3effe",
+          "#f3effe",
+          "#f3effe"
+        ],
+        "dark": "#3b306c"
+      },
+      "st-grey-bg": {
+        "role": "status",
+        "displayName": "Status grey fill (draft, cancelled, neutral)",
+        "tonalRamp": [
+          "#1a2231",
+          "#2a3549",
+          "#475569",
+          "#aeb8c7",
+          "#e0e5ec",
+          "#f1f4f8",
+          "#f1f4f8",
+          "#f1f4f8"
+        ],
+        "dark": "#1a2231"
+      },
+      "st-grey-fg": {
+        "role": "status",
+        "displayName": "Status grey text",
+        "tonalRamp": [
+          "#1a2231",
+          "#2a3549",
+          "#475569",
+          "#aeb8c7",
+          "#e0e5ec",
+          "#f1f4f8",
+          "#f1f4f8",
+          "#f1f4f8"
+        ],
+        "dark": "#aeb8c7"
+      },
+      "st-grey-bd": {
+        "role": "status",
+        "displayName": "Status grey border",
+        "tonalRamp": [
+          "#1a2231",
+          "#2a3549",
+          "#475569",
+          "#aeb8c7",
+          "#e0e5ec",
+          "#f1f4f8",
+          "#f1f4f8",
+          "#f1f4f8"
+        ],
+        "dark": "#2a3549"
+      },
+      "st-blue-bg": {
+        "role": "status",
+        "displayName": "Status blue fill (booked, confirmed, current)",
+        "tonalRamp": [
+          "#13233f",
+          "#23416f",
+          "#1752ab",
+          "#a0c4fb",
+          "#cadcfb",
+          "#eaf2fe",
+          "#eaf2fe",
+          "#eaf2fe"
+        ],
+        "dark": "#13233f"
+      },
+      "st-blue-fg": {
+        "role": "status",
+        "displayName": "Status blue text",
+        "tonalRamp": [
+          "#13233f",
+          "#23416f",
+          "#1752ab",
+          "#a0c4fb",
+          "#cadcfb",
+          "#eaf2fe",
+          "#eaf2fe",
+          "#eaf2fe"
+        ],
+        "dark": "#a0c4fb"
+      },
+      "st-blue-bd": {
+        "role": "status",
+        "displayName": "Status blue border",
+        "tonalRamp": [
+          "#13233f",
+          "#23416f",
+          "#1752ab",
+          "#a0c4fb",
+          "#cadcfb",
+          "#eaf2fe",
+          "#eaf2fe",
+          "#eaf2fe"
+        ],
+        "dark": "#23416f"
+      },
+      "chart-1": {
+        "role": "chart",
+        "displayName": "Chart Route Blue",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ]
+      },
+      "chart-2": {
+        "role": "chart",
+        "displayName": "Chart Navy",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ],
+        "dark": "#9cc0f8"
+      },
+      "chart-3": {
+        "role": "chart",
+        "displayName": "Chart Pale Blue",
+        "tonalRamp": [
+          "#142f5c",
+          "#16438a",
+          "#1752ab",
+          "#1b64d1",
+          "#2a78ea",
+          "#488ff5",
+          "#8db8f8",
+          "#dce9fd"
+        ],
+        "dark": "#3c5a8c"
+      },
+      "chart-4": {
+        "role": "chart",
+        "displayName": "Chart Green",
+        "tonalRamp": [
+          "#12a26a",
+          "#12a26a",
+          "#12a26a",
+          "#12a26a",
+          "#12a26a",
+          "#12a26a",
+          "#12a26a",
+          "#12a26a"
+        ]
+      },
+      "chart-5": {
+        "role": "chart",
+        "displayName": "Chart Amber",
+        "tonalRamp": [
+          "#e0a100",
+          "#e0a100",
+          "#e0a100",
+          "#e0a100",
+          "#e0a100",
+          "#e0a100",
+          "#e0a100",
+          "#e0a100"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Page title",
+        "purpose": "Page titles and the home greeting, one per screen."
+      },
+      "kpi-value": {
+        "displayName": "KPI value",
+        "purpose": "Stat-card figures from sm up; 17px/24px on phones."
+      },
+      "title": {
+        "displayName": "Card title",
+        "purpose": "Card, section, drawer and standalone-table titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base text, page meta, phone-card lead lines, line tabs."
+      },
+      "control": {
+        "displayName": "Control / table",
+        "purpose": "Table cells, inputs, selects, buttons (600), pill tabs, card descriptions."
+      },
+      "label": {
+        "displayName": "Column head",
+        "purpose": "Table column heads and group labels: 13px/600 ink-3, sentence case."
+      },
+      "badge": {
+        "displayName": "Badge",
+        "purpose": "Status pills and trend badges."
+      },
+      "code": {
+        "displayName": "Machine code",
+        "purpose": "File no., PNR, ticket, receipt, IATA; always whitespace-nowrap."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-card",
+        "value": "0 1px 2px rgb(15 23 42 / 0.04), 0 1px 1px rgb(15 23 42 / 0.02)",
+        "dark": "0 1px 2px rgb(0 0 0 / 0.3)",
+        "purpose": "Every card, stat card and the inset panel's rest state."
+      },
+      {
+        "name": "shadow-pop",
+        "value": "0 4px 6px -2px rgb(15 23 42 / 0.05), 0 12px 32px -8px rgb(15 23 42 / 0.18)",
+        "dark": "0 4px 6px -2px rgb(0 0 0 / 0.3), 0 16px 40px -8px rgb(0 0 0 / 0.6)",
+        "purpose": "Select menus, dropdowns, popovers."
+      },
+      {
+        "name": "shadow-drawer",
+        "value": "-16px 0 48px -16px rgb(15 23 42 / 0.24)",
+        "dark": "-16px 0 48px -16px rgb(0 0 0 / 0.7)",
+        "purpose": "Right-side sheets and drawers."
+      },
+      {
+        "name": "control-lift",
+        "value": "0 1px 2px rgb(15 23 42 / 0.04)",
+        "purpose": "Inputs and outline buttons (0.05 on outline)."
+      },
+      {
+        "name": "button-primary",
+        "value": "0 1px 2px rgb(15 23 42 / 0.12), inset 0 -1px 0 rgb(0 0 0 / 0.12)",
+        "purpose": "Primary button lift and inner bottom edge."
+      },
+      {
+        "name": "active-pill",
+        "value": "0 1px 3px rgb(15 23 42 / 0.12)",
+        "purpose": "Active pill tab; segmented option uses 0 1px 2px at 0.12."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px color-mix(in oklab, var(--brand-400) 22%, transparent)",
+        "purpose": "Focused input border halo; outline 2px ring offset 2px on buttons and everything else."
+      }
+    ],
+    "motion": [
+      {
+        "name": "duration-fast",
+        "value": "100ms",
+        "purpose": "Table row colour changes."
+      },
+      {
+        "name": "duration-base",
+        "value": "150ms",
+        "purpose": "Buttons and inputs: background, border, colour, shadow."
+      },
+      {
+        "name": "duration-overlay",
+        "value": "200ms",
+        "purpose": "Sheets, dialogs and the sidebar collapse."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "All animation and transition under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px",
+        "note": "Page meta stacks below; KPI values step up to 26px."
+      },
+      {
+        "name": "md",
+        "value": "768px",
+        "note": "Inset panel margin, radius and border; header TZS/USD switch appears."
+      },
+      {
+        "name": "lg",
+        "value": "1024px",
+        "note": "DataTable switches from labelled cards to a table; filters go inline; header shows section name and Record payment."
+      },
+      {
+        "name": "xl",
+        "value": "1280px",
+        "note": "Three-column dashboard grid; hideBelow xl columns appear."
+      },
+      {
+        "name": "2xl",
+        "value": "1536px",
+        "note": "Six KPI cards across; hideBelow 2xl columns appear; 40px page padding."
+      }
+    ],
+    "darkTheme": {
+      "selector": ".dark",
+      "primary": "#488ff5",
+      "primary-hover": "#8db8f8",
+      "primary-foreground": "#0b1220",
+      "link": "#8db8f8",
+      "sidebar-primary-foreground": "#0b1220",
+      "note": "Role tokens remap under .dark; per-token dark values are in colorMeta.<token>.dark."
+    },
+    "sourceFiles": [
+      "src/app/globals.css",
+      "src/lib/fonts.ts",
+      "src/components/ui/*",
+      "src/components/shared/*",
+      "src/components/layout/*"
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one primary action per region (New booking, Show results, Save).",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M12 5v14M5 12h14\"/></svg>New booking</button>",
+      "css": ".ds-btn-primary{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 16px 0 12px;border:0;border-radius:10px;background:var(--primary,#1b64d1);color:var(--primary-foreground,#fff);font-size:14px;font-weight:600;line-height:1;box-shadow:0 1px 2px rgb(15 23 42/.12),inset 0 -1px 0 rgb(0 0 0/.12);transition:background-color .15s;cursor:pointer}.ds-btn-primary:hover{background:var(--primary-hover,#1752ab)}.ds-btn-primary:focus-visible{outline:2px solid var(--ring,#488ff5);outline-offset:2px}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary page and toolbar actions (Paste PNR, Export CSV, Filters).",
+      "html": "<button class=\"ds-btn-outline\">Export CSV</button>",
+      "css": ".ds-btn-outline{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;height:36px;padding:0 16px;border:1px solid var(--rule-2,#d6dce5);border-radius:10px;background:var(--paper,#fff);color:var(--ink,#0f172a);font-size:14px;font-weight:600;box-shadow:0 1px 2px rgb(15 23 42/.05);transition:background-color .15s;cursor:pointer}.ds-btn-outline:hover{background:var(--canvas,#f4f6f9)}.ds-btn-outline:active{background:var(--canvas-2,#edf0f4)}.ds-btn-outline:focus-visible{outline:2px solid var(--ring,#488ff5);outline-offset:2px}"
+    },
+    {
+      "name": "Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Text field and select trigger base (controlBase).",
+      "html": "<input class=\"ds-input\" placeholder=\"Search file no., client, PNR\" />",
+      "css": ".ds-input{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;width:280px;height:36px;padding:4px 12px;border:1px solid var(--rule-2,#d6dce5);border-radius:10px;background:var(--paper,#fff);color:var(--ink,#0f172a);font-size:14px;box-shadow:0 1px 2px rgb(15 23 42/.04);outline:none;transition:border-color .15s,box-shadow .15s}.ds-input::placeholder{color:var(--ink-4,#626e84)}.ds-input:hover{border-color:rgb(98 110 132/.5)}.ds-input:focus-visible{border-color:var(--brand-400,#488ff5);box-shadow:0 0 0 3px color-mix(in oklab,#488ff5 22%,transparent)}"
+    },
+    {
+      "name": "Applied Filter",
+      "kind": "chip",
+      "refersTo": "filter-select-applied",
+      "description": "FilterSelect moved off 'all': brand tint so applied filters read at a glance.",
+      "html": "<span class=\"ds-filter\">All kinds</span><span class=\"ds-filter ds-filter-on\">Hotels</span>",
+      "css": ".ds-filter{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;display:inline-flex;align-items:center;gap:8px;height:32px;min-width:120px;padding:0 12px;margin-right:8px;border:1px solid var(--rule-2,#d6dce5);border-radius:10px;background:var(--paper,#fff);color:var(--ink,#0f172a);font-size:13px;cursor:pointer}.ds-filter:after{content:'';width:6px;height:6px;margin-left:auto;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.6}.ds-filter-on{border-color:var(--brand-300,#8db8f8);background:var(--band,#eef4fe);color:var(--brand-700,#1752ab);font-weight:600}"
+    },
+    {
+      "name": "Stat Card",
+      "kind": "card",
+      "refersTo": "stat-card",
+      "description": "KPI card: label, big tabular value with small code, trend badge, footnote.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-top\"><span class=\"ds-card-label\">Payables</span><span class=\"ds-trend ds-trend-bad\">&#8599; +84.7%</span></div><div class=\"ds-kpi\"><small>TZS</small>26,387,602</div><div class=\"ds-foot\">What we owe suppliers</div></div>",
+      "css": ".ds-card{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;width:300px;padding:20px;border:1px solid var(--rule,#e6e9ef);border-radius:12px;background:var(--paper,#fff);box-shadow:0 1px 2px rgb(15 23 42/.04),0 1px 1px rgb(15 23 42/.02);transition:background-color .15s,border-color .15s}.ds-card:hover{border-color:var(--rule-2,#d6dce5);background:var(--band-hover,#f7f9fc)}.ds-card-top{display:flex;justify-content:space-between;align-items:flex-start}.ds-card-label{font-size:14px;font-weight:500;color:var(--ink-3,#52607a)}.ds-kpi{margin-top:12px;font-size:26px;line-height:32px;font-weight:700;letter-spacing:-.02em;color:var(--ink,#0f172a);font-variant-numeric:tabular-nums lining-nums}.ds-kpi small{font-size:.55em;font-weight:600;color:var(--ink-3,#52607a);margin-right:4px}.ds-foot{margin-top:8px;font-size:13px;color:var(--ink-3,#52607a)}.ds-trend{display:inline-flex;align-items:center;gap:4px;height:24px;padding:0 8px;border:1px solid;border-radius:9999px;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}.ds-trend-bad{border-color:var(--st-red-bd,#f7cdca);background:var(--st-red-bg,#fdecec);color:var(--st-red-fg,#b42318)}"
+    },
+    {
+      "name": "Status Chip",
+      "kind": "chip",
+      "refersTo": "status-chip-green",
+      "description": "Badge tone with a dot; one map drives every status label and tone.",
+      "html": "<span class=\"ds-chip ds-green\"><i></i>Paid</span><span class=\"ds-chip ds-amber\"><i></i>Partial</span><span class=\"ds-chip ds-red\"><i></i>Unpaid</span><span class=\"ds-chip ds-violet\"><i></i>Credit</span><span class=\"ds-chip ds-blue\"><i></i>Confirmed</span><span class=\"ds-chip ds-grey\"><i></i><s>Cancelled</s></span>",
+      "css": ".ds-chip{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;margin:0 6px 6px 0;border:1px solid;border-radius:9999px;font-size:12px;font-weight:600;line-height:1;white-space:nowrap}.ds-chip i{width:6px;height:6px;border-radius:9999px;background:currentColor}.ds-chip s{text-decoration-thickness:1px}.ds-green{background:var(--st-green-bg,#e8f7ef);color:var(--st-green-fg,#127347);border-color:var(--st-green-bd,#c6ebd6)}.ds-amber{background:var(--st-amber-bg,#fff4e0);color:var(--st-amber-fg,#8a4f00);border-color:var(--st-amber-bd,#f6dcae)}.ds-red{background:var(--st-red-bg,#fdecec);color:var(--st-red-fg,#b42318);border-color:var(--st-red-bd,#f7cdca)}.ds-violet{background:var(--st-violet-bg,#f3effe);color:var(--st-violet-fg,#5b3cc4);border-color:var(--st-violet-bd,#ddd3fa)}.ds-blue{background:var(--st-blue-bg,#eaf2fe);color:var(--st-blue-fg,#1752ab);border-color:var(--st-blue-bd,#cadcfb)}.ds-grey{background:var(--st-grey-bg,#f1f4f8);color:var(--st-grey-fg,#475569);border-color:var(--st-grey-bd,#e0e5ec)}"
+    },
+    {
+      "name": "Data Table",
+      "kind": "custom",
+      "refersTo": "table-head-row",
+      "description": "Soft head band, 13px/600 sentence-case heads, 56px rows, right-aligned tabular amounts with small code, mono file numbers. Below lg it becomes labelled cards.",
+      "html": "<table class=\"ds-table\"><thead><tr><th>File no.</th><th>Client</th><th>Status</th><th class=\"r\">Total</th></tr></thead><tbody><tr><td><code>AP-2026-000032</code></td><td>Godfrey Lyimo</td><td><span class=\"ds-pill\"><i></i>Paid</span></td><td class=\"r\"><small>USD</small> 2,348.69</td></tr><tr><td><code>AP-2026-000031</code></td><td>Zawadi Mbwambo</td><td><span class=\"ds-pill\"><i></i>Paid</span></td><td class=\"r\"><small>TZS</small> 1,250,000</td></tr></tbody></table>",
+      "css": ".ds-table{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;width:560px;border-collapse:collapse;font-size:14px;color:var(--ink,#0f172a);background:var(--paper,#fff)}.ds-table th{height:44px;padding:0 16px;background:var(--table-head,#f8fafc);box-shadow:inset 0 -1px 0 var(--rule,#e6e9ef);text-align:left;font-size:13px;line-height:20px;font-weight:600;color:var(--ink-3,#52607a);white-space:nowrap}.ds-table td{height:56px;padding:0 16px;border-bottom:1px solid var(--rule,#e6e9ef)}.ds-table th:first-child,.ds-table td:first-child{padding-left:20px}.ds-table th:last-child,.ds-table td:last-child{padding-right:20px}.ds-table tbody tr{cursor:pointer;transition:background-color .1s}.ds-table tbody tr:hover{background:var(--band-hover,#f7f9fc)}.ds-table .r{text-align:right;font-variant-numeric:tabular-nums lining-nums;white-space:nowrap}.ds-table small{font-size:.78em;font-weight:500;letter-spacing:.025em;color:var(--ink-3,#52607a)}.ds-table code{font-family:var(--font-jetbrains,'JetBrains Mono'),ui-monospace,monospace;font-size:13.5px;letter-spacing:.01em;white-space:nowrap;font-feature-settings:'zero'}.ds-pill{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border:1px solid var(--st-green-bd,#c6ebd6);border-radius:9999px;background:var(--st-green-bg,#e8f7ef);color:var(--st-green-fg,#127347);font-size:12px;font-weight:600}.ds-pill i{width:6px;height:6px;border-radius:9999px;background:currentColor}"
+    },
+    {
+      "name": "Line Tabs",
+      "kind": "nav",
+      "refersTo": "tabs-line-active",
+      "description": "Page sections synced to ?tab=; brand underline on the active tab, count badge beside labels.",
+      "html": "<div class=\"ds-ltabs\"><button class=\"on\">Suppliers <b>6</b></button><button>Supplier payments <b>8</b></button><button>Expenses <b>25</b></button></div>",
+      "css": ".ds-ltabs{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;display:flex;gap:24px;border-bottom:1px solid var(--rule,#e6e9ef)}.ds-ltabs button{display:inline-flex;align-items:center;gap:8px;height:44px;margin-bottom:-1px;padding:0;border:0;border-bottom:2px solid transparent;background:none;color:var(--ink-3,#52607a);font:inherit;font-size:15px;font-weight:600;cursor:pointer;transition:color .15s,border-color .15s}.ds-ltabs button:hover{color:var(--ink,#0f172a);border-bottom-color:var(--rule-2,#d6dce5)}.ds-ltabs button.on{color:var(--ink,#0f172a);border-bottom-color:var(--primary,#1b64d1)}.ds-ltabs b{padding:2px 8px;border-radius:9999px;background:var(--canvas-2,#edf0f4);color:var(--ink-2,#334155);font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}.ds-ltabs .on b{background:var(--band,#eef4fe);color:var(--brand-700,#1752ab)}.ds-ltabs button:focus-visible{outline:2px solid var(--ring,#488ff5);outline-offset:2px}"
+    },
+    {
+      "name": "Pill Tabs",
+      "kind": "nav",
+      "refersTo": "tabs-pill-active",
+      "description": "Quick views of one list (All, Drafts, Confirmed); white active pill on a grey track, plain counts.",
+      "html": "<div class=\"ds-ptabs\"><button class=\"on\">All <span>32</span></button><button>Drafts <span>4</span></button><button>Confirmed <span>21</span></button></div>",
+      "css": ".ds-ptabs{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;display:inline-flex;gap:4px;padding:4px;border-radius:12px;background:var(--canvas-2,#edf0f4)}.ds-ptabs button{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 14px;border:0;border-radius:10px;background:none;color:var(--ink-3,#52607a);font:inherit;font-size:14px;font-weight:600;cursor:pointer;transition:color .15s}.ds-ptabs button:hover{color:var(--ink,#0f172a)}.ds-ptabs button.on{background:var(--paper,#fff);color:var(--ink,#0f172a);box-shadow:0 1px 3px rgb(15 23 42/.12)}.ds-ptabs span{font-size:13px;font-weight:500;color:var(--ink-4,#626e84);font-variant-numeric:tabular-nums}.ds-ptabs .on span{color:var(--ink-3,#52607a)}.ds-ptabs button:focus-visible{outline:2px solid var(--ring,#488ff5);outline-offset:2px}"
+    },
+    {
+      "name": "Sidebar Nav Item",
+      "kind": "nav",
+      "refersTo": "nav-item-active",
+      "description": "Inset sidebar item; active is a white pill with a rule ring and brand icon; counts in round badges.",
+      "html": "<nav class=\"ds-nav\"><a class=\"on\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 10l9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z\"/></svg>Home<b>14</b></a><a><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/></svg>Payments<b>6</b></a></nav>",
+      "css": ".ds-nav{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;width:216px;padding:8px;background:var(--canvas,#f4f6f9)}.ds-nav a{display:flex;align-items:center;gap:10px;height:40px;padding:0 10px;border-radius:8px;color:var(--ink-2,#334155);font-size:15px;font-weight:500;cursor:pointer;transition:background-color .15s}.ds-nav a svg{color:var(--ink-3,#52607a)}.ds-nav a:hover{background:var(--sidebar-accent,#e7ebf1)}.ds-nav a.on{background:var(--paper,#fff);color:var(--ink,#0f172a);font-weight:600;box-shadow:0 1px 2px rgb(15 23 42/.08),0 0 0 1px var(--rule,#e6e9ef)}.ds-nav a.on svg{color:var(--brand-600,#1b64d1)}.ds-nav b{margin-left:auto;padding:0 8px;border-radius:9999px;background:var(--canvas-2,#edf0f4);color:var(--ink-2,#334155);font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}.ds-nav a.on b{background:var(--band,#eef4fe);color:var(--brand-700,#1752ab)}"
+    },
+    {
+      "name": "Currency Switch",
+      "kind": "custom",
+      "refersTo": "segmented-active",
+      "description": "Header TZS/USD segmented control; the single source of truth for display currency.",
+      "html": "<div class=\"ds-seg\" role=\"radiogroup\"><button class=\"on\">TZS</button><button>USD</button></div>",
+      "css": ".ds-seg{font-family: var(--font-montserrat, Montserrat), ui-sans-serif, system-ui, sans-serif;display:inline-flex;gap:2px;padding:4px;border-radius:10px;background:var(--canvas-2,#edf0f4)}.ds-seg button{height:28px;padding:0 10px;border:0;border-radius:8px;background:none;color:var(--ink-3,#52607a);font:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:color .15s}.ds-seg button:hover{color:var(--ink,#0f172a)}.ds-seg button.on{background:var(--paper,#fff);color:var(--ink,#0f172a);box-shadow:0 1px 2px rgb(15 23 42/.12)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Well-Run Counter",
+    "overview": "Aeropath is the category-standard SaaS dashboard, done with care: an inset shadcn sidebar sitting on a soft cool-grey canvas, content in one white inset panel, and white cards with a hairline border, a 12px radius and a shadow you only notice when it's missing. The craft references are the shadcn dashboard blocks, Stripe Dashboard, Linear and the Vercel dashboard. The form is Canon: familiar on purpose. Agents, accountants and a manager spend their whole working day in it, so anything they have to learn is a cost.\n\nType is comfortable, not cramped. Montserrat carries every word at 15px body, 14px in tables and controls, and 26px bold for page titles. Money is what the page is about: every amount is right-aligned, uses tabular figures and carries a small, quieter currency code. Colour is rationed. Brand blue marks the primary action, focus, the active tab line and applied filters. The six status tones always mean a state (pills, trend badges, notices, severity icons), never decoration.\n\nThe system is responsive by construction rather than by exception. No list ever scrolls sideways. Tables become labelled cards below `lg` and gain columns at `xl` and `2xl`, and filters move into a bottom sheet on small screens. Light and dark themes share one set of role tokens.",
+    "keyCharacteristics": [
+      "Inset sidebar on the canvas, with a white inset panel that has a sticky, translucent 64px header.",
+      "White cards (12px radius, 1px rule, near-flat shadow, 20px insets) on the cool-grey canvas.",
+      "Montserrat for all UI, and JetBrains Mono only for machine codes.",
+      "Tabular, right-aligned amounts with a small currency code.",
+      "A status on a record is always a tinted pill with a dot and a text label. Colour never carries meaning on its own.",
+      "Every table reflows into labelled cards below `lg`."
+    ],
+    "rules": [
+      {
+        "name": "The State-Only Colour Rule",
+        "body": "A status tone always states something (pill, trend badge, Notice, urgency icon, overdue figure), never decoration, never a whole card or row fill, and the state is always also in words.",
+        "section": "colors"
+      },
+      {
+        "name": "The Deep-Fill Rule",
+        "body": "Primary fills with white text use brand-600 in light theme; brand-400 is for focus, charts and dark theme.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sentence-Case Rule",
+        "body": "Column heads, labels, tabs and buttons are sentence case at natural tracking; nothing in UI chrome is uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Machine-Code Rule",
+        "body": "JetBrains Mono only for machine-issued codes (file no., PNR, ticket, receipt, IATA) and their inputs; never wraps.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Money Rule",
+        "body": "Every figure that lines up uses tabular lining numerals; amounts are right-aligned with a small quieter currency code.",
+        "section": "typography"
+      },
+      {
+        "name": "The No-Sideways-Scroll Rule",
+        "body": "Below lg every DataTable renders rows as labelled cards; from lg a table that adds hideBelow xl/2xl columns as width grows.",
+        "section": "layout"
+      },
+      {
+        "name": "The Filters-Sheet Rule",
+        "body": "Filters inline from lg; below lg behind one Filters button with a count, in a bottom sheet.",
+        "section": "layout"
+      },
+      {
+        "name": "The Stacked-Meta Rule",
+        "body": "Page meta items stack one per line on phones, separator dots hidden.",
+        "section": "layout"
+      },
+      {
+        "name": "The One-Currency-Switch Rule",
+        "body": "The header TZS/USD switch is the single source of truth for display currency; any mirror writes the same store value.",
+        "section": "layout"
+      },
+      {
+        "name": "The Whisper Rule",
+        "body": "Resting surfaces never cast a visible drop shadow; only popovers and drawers do.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do put content on paper cards (12px, 1px rule, Card shadow, 20px insets) inside the white inset panel.",
+      "Do build every list with DataTable, with `hideBelow: \"xl\" | \"2xl\"` on secondary columns and `mobile: \"title\" | \"aside\"` where the defaults guess wrong.",
+      "Do wrap table filters in ResponsiveFilters and use FilterSelect so that applied filters get the brand tint.",
+      "Do use line tabs for page sections and pill tabs for quick views of one list.",
+      "Do render every amount through Amount (right-aligned, tabular, small code first) and every state through StatusChip.",
+      "Do read display currency from the header switch's store value.",
+      "Do keep column heads at 13px/600 ink-3 in sentence case."
+    ],
+    "donts": [
+      "Don't let a table scroll sideways on any screen.",
+      "Don't use a status tone as decoration or as a whole card or table-row fill. Put the state in a pill or Notice, with words.",
+      "Don't set UI labels, column heads or tabs in uppercase or tracked out. The only natively tracked text is the small currency code, and uppercase appears only in passport-style traveller names and code inputs.",
+      "Don't use JetBrains Mono for names, prose or amounts, and don't let a code wrap.",
+      "Don't use brand-400 as a fill behind white text in light theme.",
+      "Don't add a second display-currency control that keeps its own state.",
+      "Don't give resting surfaces a visible drop shadow."
+    ]
+  }
+}

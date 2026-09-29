@@ -1,0 +1,36 @@
+{
+  "recordLocator": "Z8K4QM",
+  "officeId": "DARTZ2100",
+  "createdAt": "2026-09-28T08:12:00.000Z",
+  "passengers": [
+    { "pnrPaxNo": 1, "surname": "MWAKALINGA", "givenName": "PETER", "title": "MR", "paxType": "ADT" },
+    { "pnrPaxNo": 2, "surname": "MWAKALINGA", "givenName": "ANNA", "title": "MRS", "paxType": "ADT" },
+    { "pnrPaxNo": 3, "surname": "MWAKALINGA", "givenName": "DAVID", "title": "MSTR", "paxType": "CHD", "dateOfBirth": "2017-03-12" }
+  ],
+  "segments": [
+    {
+      "segmentNo": 4, "carrier": "EK", "flightNumber": "726", "bookingClass": "Y",
+      "origin": "DAR", "destination": "DXB",
+      "departureLocal": "2026-10-12T16:50", "arrivalLocal": "2026-10-12T23:05", "arrivalDayOffset": 0,
+      "statusCode": "HK", "seats": 3
+    },
+    {
+      "segmentNo": 5, "carrier": "EK", "flightNumber": "725", "bookingClass": "Y",
+      "origin": "DXB", "destination": "DAR",
+      "departureLocal": "2026-10-26T10:20", "arrivalLocal": "2026-10-26T15:00", "arrivalDayOffset": 0,
+      "statusCode": "HK", "seats": 3
+    }
+  ],
+  "tickets": [
+    { "pnrPaxNo": 1, "ticketNumber": "176-2401234567", "carrier": "EK", "currency": "USD", "amount": 1450, "issuedAt": "2026-09-28" },
+    { "pnrPaxNo": 2, "ticketNumber": "176-2401234568", "carrier": "EK", "currency": "USD", "amount": 1450, "issuedAt": "2026-09-28" },
+    { "pnrPaxNo": 3, "ticketNumber": "176-2401234569", "carrier": "EK", "currency": "USD", "amount": 1120, "issuedAt": "2026-09-28" }
+  ],
+  "contacts": [
+    { "type": "phone", "value": "+255754000111" },
+    { "type": "email", "value": "peter@example.com" }
+  ],
+  "mock": {
+    "queueReason": "Schedule change on EK 725. Confirm the new times with the client."
+  }
+}

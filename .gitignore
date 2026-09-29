@@ -47,3 +47,11 @@ next-env.d.ts
 # permanently — git never forgets a blob — and slow every clone, for files no build step reads.
 # Keep them in your own storage; re-run the script if you add or replace one.
 /public/hotels
+
+# Original hotel photos (5–20 MB each). The app uses the web-sized copies in public/images/hotels.
+/public/hotels/
+
+# Local tooling
+/.claude/
+/.impeccable/review/
+/.impeccable/hook.cache.json

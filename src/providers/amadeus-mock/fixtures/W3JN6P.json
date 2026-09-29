@@ -1,0 +1,33 @@
+{
+  "recordLocator": "W3JN6P",
+  "officeId": "DARTZ2100",
+  "createdAt": "2026-09-27T14:35:00.000Z",
+  "passengers": [
+    { "pnrPaxNo": 1, "surname": "SWAI", "givenName": "JOHN", "title": "MR", "paxType": "ADT" },
+    { "pnrPaxNo": 2, "surname": "SWAI", "givenName": "MARY", "title": "MRS", "paxType": "ADT" }
+  ],
+  "segments": [
+    {
+      "segmentNo": 3, "carrier": "KQ", "flightNumber": "483", "bookingClass": "M",
+      "origin": "DAR", "destination": "NBO",
+      "departureLocal": "2026-10-16T10:15", "arrivalLocal": "2026-10-16T11:50", "arrivalDayOffset": 0,
+      "statusCode": "HK", "seats": 2
+    },
+    {
+      "segmentNo": 4, "carrier": "KQ", "flightNumber": "482", "bookingClass": "M",
+      "origin": "NBO", "destination": "DAR",
+      "departureLocal": "2026-10-20T07:15", "arrivalLocal": "2026-10-20T08:50", "arrivalDayOffset": 0,
+      "statusCode": "HK", "seats": 2
+    }
+  ],
+  "ticketingTimeLimit": "2026-10-05T20:59:00.000Z",
+  "tickets": [],
+  "contacts": [
+    { "type": "phone", "value": "+255713456789" },
+    { "type": "email", "value": "john.swai@example.com" }
+  ],
+  "mock": {
+    "fare": { "currency": "USD", "perPax": { "1": 385, "2": 385 } },
+    "queueReason": "Ticketing time limit is close. Issue now or Kenya Airways will cancel the booking."
+  }
+}

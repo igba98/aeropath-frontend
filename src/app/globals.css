@@ -1,111 +1,169 @@
-/* Aeropath design tokens.
-   Palette: #003CAC primary · #002660 deep · #EAEEF6 tint · #262626 ink · #F0F0F0 / #FFFFFF surfaces · #959595 grey.
-   Colour is deliberately scarce — blue carries meaning, everything else is paper and ink. */
+/* Aeropath back office — shadcn dashboard canon at Stripe / Linear / Vercel craft.
+   Soft cool-grey canvas, white inset panel and cards, Montserrat, comfortable type.
+   #488FF5 is the brand; primary fills use a deeper step so white labels pass AA.
+   Legacy token names (paper, canvas, ink, rule, band, st-*) are kept and remapped so every
+   screen follows the new world without per-file changes. */
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --brand-50: #eef4fe;
+  --brand-100: #dce9fd;
+  --brand-200: #bbd4fb;
+  --brand-300: #8db8f8;
+  --brand-400: #488ff5;
+  --brand-500: #2a78ea;
+  --brand-600: #1b64d1;
+  --brand-700: #1752ab;
+  --brand-800: #16438a;
+  --brand-900: #142f5c;
+
+  /* Surfaces and ink */
+  --paper: #ffffff; /* cards, panels, inputs */
+  --canvas: #f4f6f9; /* app canvas, muted fills */
+  --canvas-2: #edf0f4; /* hover and secondary fills */
+  --ink: #0f172a;
+  --ink-2: #334155;
+  --ink-3: #52607a;
+  --ink-4: #626e84;
+  --rule: #e6e9ef;
+  --rule-2: #d6dce5;
+  --rule-strong: #cfd6e0;
+  --band: #eef4fe;
+  --band-hover: #f7f9fc;
+  --table-head: #f8fafc;
+
+  /* Status (badges only) */
+  --st-green-bg: #e8f7ef;
+  --st-green-fg: #127347;
+  --st-green-bd: #c6ebd6;
+  --st-amber-bg: #fff4e0;
+  --st-amber-fg: #8a4f00;
+  --st-amber-bd: #f6dcae;
+  --st-red-bg: #fdecec;
+  --st-red-fg: #b42318;
+  --st-red-bd: #f7cdca;
+  --st-violet-bg: #f3effe;
+  --st-violet-fg: #5b3cc4;
+  --st-violet-bd: #ddd3fa;
+  --st-grey-bg: #f1f4f8;
+  --st-grey-fg: #475569;
+  --st-grey-bd: #e0e5ec;
+  --st-blue-bg: #eaf2fe;
+  --st-blue-fg: #1752ab;
+  --st-blue-bd: #cadcfb;
+
+  /* shadcn contract */
   --radius: 0.75rem;
+  --background: var(--canvas);
+  --foreground: var(--ink);
+  --card: var(--paper);
+  --card-foreground: var(--ink);
+  --popover: var(--paper);
+  --popover-foreground: var(--ink);
+  --primary: var(--brand-600);
+  --primary-hover: var(--brand-700);
+  --primary-foreground: #ffffff;
+  --secondary: var(--canvas-2);
+  --secondary-foreground: var(--ink);
+  --muted: var(--canvas);
+  --muted-foreground: var(--ink-3);
+  --accent: var(--canvas-2);
+  --accent-foreground: var(--ink);
+  --destructive: #c4321f;
+  --destructive-hover: #a8281a;
+  --destructive-foreground: #ffffff;
+  --border: var(--rule);
+  --input: var(--rule-2);
+  --ring: var(--brand-400);
+  --link: var(--brand-600);
 
-  /* Brand ramp, anchored on the three given blues */
-  --brand-50:  #EAEEF6;
-  --brand-100: #D8E0F0;
-  --brand-200: #B4C4E3;
-  --brand-300: #8AA4D4;
-  --brand-400: #4E77C1;
-  --brand-500: #003CAC;
-  --brand-600: #00359A;
-  --brand-700: #002D82;
-  --brand-800: #002660;
-  --brand-900: #001B45;
+  /* Sidebar: the app shell is Route Blue; the white work panel floats on it. */
+  --sidebar: #123f86;
+  --sidebar-foreground: #dbe6fb;
+  --sidebar-muted: #9fb8e6;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: var(--brand-800);
+  --sidebar-accent: rgb(255 255 255 / 0.1);
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgb(255 255 255 / 0.14);
+  --sidebar-ring: var(--brand-300);
 
-  /* Neutrals */
-  --neutral-0:   #FFFFFF;
-  --neutral-25:  #FAFAFA;
-  --neutral-100: #F0F0F0;
-  --neutral-200: #E4E4E4;
-  --neutral-300: #D2D2D2;
-  --neutral-400: #959595;
-  --neutral-500: #6B6B6B;
-  --neutral-800: #3D3D3D;
-  --neutral-900: #262626;
+  --chart-1: var(--brand-400);
+  --chart-2: #1e3a8a;
+  --chart-3: #93b4e6;
+  --chart-4: #12a26a;
+  --chart-5: #e0a100;
 
-  /* Status — desaturated so they read as information, not decoration */
-  --success:     #1F8A54;
-  --success-fg:  #14663D;
-  --warning:     #B7791F;
-  --warning-fg:  #8A5A12;
-  --danger:      #C0392B;
-  --danger-fg:   #96291D;
+  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 1px 1px rgb(15 23 42 / 0.02);
+  --shadow-pop: 0 4px 6px -2px rgb(15 23 42 / 0.05), 0 12px 32px -8px rgb(15 23 42 / 0.18);
+  --shadow-drawer: -16px 0 48px -16px rgb(15 23 42 / 0.24);
+  --hatch: repeating-linear-gradient(135deg, currentColor 0 1px, transparent 1px 5px);
 
-  /* Semantic (shadcn contract) */
-  --background: var(--neutral-0);
-  --foreground: var(--neutral-900);
-  --card: var(--neutral-0);
-  --card-foreground: var(--neutral-900);
-  --popover: var(--neutral-0);
-  --popover-foreground: var(--neutral-900);
-  --primary: var(--brand-500);
-  --primary-foreground: var(--neutral-0);
-  --primary-hover: var(--brand-600);
-  --secondary: var(--brand-50);
-  --secondary-foreground: var(--brand-800);
-  --muted: var(--neutral-100);
-  --muted-foreground: var(--neutral-500);
-  --placeholder: var(--neutral-400);
-  --accent: var(--brand-50);
-  --accent-foreground: var(--brand-800);
-  --highlight: var(--brand-400);
-  --highlight-foreground: var(--brand-900);
-  --accent-soft: var(--brand-200);
-  --destructive: var(--danger);
-  --destructive-foreground: var(--neutral-0);
-  --border: var(--neutral-200);
-  --input: var(--neutral-100);
-  --ring: var(--brand-500);
-  --brand-text: var(--brand-500);
-  --brand-text-strong: var(--brand-800);
-  --chart-1: var(--brand-500);
-  --chart-2: var(--brand-400);
-  --chart-3: var(--brand-300);
-  --chart-4: var(--brand-800);
-  --chart-5: var(--neutral-400);
-  --sidebar: var(--neutral-0);
-  --sidebar-foreground: var(--neutral-900);
-  --sidebar-primary: var(--brand-500);
-  --sidebar-primary-foreground: var(--neutral-0);
-  --sidebar-accent: var(--brand-50);
-  --sidebar-accent-foreground: var(--brand-800);
-  --sidebar-border: var(--neutral-200);
-  --sidebar-ring: var(--brand-500);
+  color-scheme: light;
 }
 
 .dark {
-  --background: #16181C;
-  --foreground: var(--neutral-100);
-  --card: #1E2127;
-  --card-foreground: var(--neutral-100);
-  --popover: #1E2127;
-  --popover-foreground: var(--neutral-100);
-  --primary: var(--brand-300);
-  --primary-foreground: var(--brand-900);
-  --primary-hover: var(--brand-200);
-  --secondary: #262A32;
-  --secondary-foreground: var(--neutral-100);
-  --muted: #262A32;
-  --muted-foreground: #A2A8B3;
-  --placeholder: #7C838F;
-  --accent: #232A38;
-  --accent-foreground: var(--brand-100);
-  --border: #313640;
-  --input: #262A32;
-  --ring: var(--brand-300);
-  --brand-text: var(--brand-300);
-  --brand-text-strong: var(--brand-200);
-  --sidebar: #1E2127;
-  --sidebar-foreground: var(--neutral-100);
+  --paper: #121826;
+  --canvas: #0a0e16;
+  --canvas-2: #1a2231;
+  --ink: #e8ecf3;
+  --ink-2: #c1c9d6;
+  --ink-3: #a3adbd;
+  --ink-4: #8793a6;
+  --rule: #222b3b;
+  --rule-2: #2e3a4e;
+  --rule-strong: #334155;
+  --band: #16284a;
+  --band-hover: #161e2d;
+  --table-head: #151c2a;
+
+  --st-green-bg: #0f2a1f;
+  --st-green-fg: #72d9a6;
+  --st-green-bd: #1f4b37;
+  --st-amber-bg: #2d2210;
+  --st-amber-fg: #f3c46b;
+  --st-amber-bd: #4f3b18;
+  --st-red-bg: #33161a;
+  --st-red-fg: #ff9d93;
+  --st-red-bd: #5b262b;
+  --st-violet-bg: #231c42;
+  --st-violet-fg: #bda9ff;
+  --st-violet-bd: #3b306c;
+  --st-grey-bg: #1a2231;
+  --st-grey-fg: #aeb8c7;
+  --st-grey-bd: #2a3549;
+  --st-blue-bg: #13233f;
+  --st-blue-fg: #a0c4fb;
+  --st-blue-bd: #23416f;
+
+  --primary: var(--brand-400);
+  --primary-hover: var(--brand-300);
+  --primary-foreground: #0b1220;
+  --destructive: #ef5a47;
+  --destructive-hover: #ff7461;
+  --destructive-foreground: #1a0906;
+  --link: var(--brand-300);
+
+  --sidebar: #0b1b3a;
+  --sidebar-foreground: #c9d6ef;
+  --sidebar-muted: #7f95bd;
+  --sidebar-primary: #e8efff;
+  --sidebar-primary-foreground: #0b1b3a;
+  --sidebar-accent: rgb(255 255 255 / 0.08);
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgb(255 255 255 / 0.1);
+
+  --chart-2: #9cc0f8;
+  --chart-3: #3c5a8c;
+
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-pop: 0 4px 6px -2px rgb(0 0 0 / 0.3), 0 16px 40px -8px rgb(0 0 0 / 0.6);
+  --shadow-drawer: -16px 0 48px -16px rgb(0 0 0 / 0.7);
+
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -116,29 +174,46 @@
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
   --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  --color-placeholder: var(--placeholder);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --color-highlight: var(--highlight);
-  --color-highlight-foreground: var(--highlight-foreground);
-  --color-accent-soft: var(--accent-soft);
   --color-destructive: var(--destructive);
+  --color-destructive-hover: var(--destructive-hover);
   --color-destructive-foreground: var(--destructive-foreground);
-  --color-success: var(--success);
-  --color-success-foreground: var(--success-fg);
-  --color-warning: var(--warning);
-  --color-warning-foreground: var(--warning-fg);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-brand-text: var(--brand-text);
-  --color-brand-text-strong: var(--brand-text-strong);
+  --color-link: var(--link);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-muted: var(--sidebar-muted);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-paper: var(--paper);
+  --color-canvas: var(--canvas);
+  --color-canvas-2: var(--canvas-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-ink-4: var(--ink-4);
+  --color-rule: var(--rule);
+  --color-rule-2: var(--rule-2);
+  --color-rule-strong: var(--rule-strong);
+  --color-band: var(--band);
+  --color-band-hover: var(--band-hover);
+  --color-table-head: var(--table-head);
+  --color-brand: var(--brand-400);
   --color-brand-50: var(--brand-50);
   --color-brand-100: var(--brand-100);
   --color-brand-200: var(--brand-200);
@@ -149,92 +224,204 @@
   --color-brand-700: var(--brand-700);
   --color-brand-800: var(--brand-800);
   --color-brand-900: var(--brand-900);
-  --color-neutral-ink: var(--neutral-900);
+
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 
-  --font-display: var(--font-sans), plusJakartaDisplay, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  --font-sans: var(--font-sans), plusJakartaDisplay, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  --font-mono: var(--font-mono), ui-monospace, monospace;
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", Menlo, monospace;
 
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --radius-2xl: calc(var(--radius) + 10px);
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+
+  --shadow-card: var(--shadow-card);
+  --shadow-pop: var(--shadow-pop);
+  --shadow-drawer: var(--shadow-drawer);
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/40;
+    @apply border-border;
   }
   html {
-    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "cv11", "ss01";
+    font-size: 15px;
+    line-height: 1.55;
     text-rendering: optimizeLegibility;
   }
-  /* 600 for large headings, 500 for sub-headings, 400 everywhere else. */
-  h1, h2, .font-display {
-    font-family: var(--font-display);
-    font-weight: 600;
-    letter-spacing: -0.02em;
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.015em;
+    text-wrap: balance;
   }
-  h3, h4, h5, h6 {
-    font-family: var(--font-display);
-    font-weight: 500;
-    letter-spacing: -0.01em;
+  ::selection {
+    background: var(--brand-200);
+    color: var(--ink);
   }
-  /* Buttons carry 500 — including bare <button> elements used as controls. Select triggers are
-     excluded because they display a chosen value, which belongs at body weight. */
-  button, [role="button"] {
-    font-weight: 500;
+  .dark ::selection {
+    background: var(--brand-800);
+    color: #fff;
   }
-  input, textarea, select,
-  [data-slot="select-trigger"], [data-slot="select-value"] {
-    font-weight: 400;
+  input,
+  textarea {
+    caret-color: var(--brand-400);
   }
   ::placeholder {
-    color: var(--placeholder);
+    color: var(--ink-4);
     opacity: 1;
   }
-  .tabular, td[data-numeric], .price {
-    font-variant-numeric: tabular-nums;
-    font-feature-settings: "tnum";
-  }
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-ring;
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
   }
-  [data-scroll-target] {
-    scroll-margin-top: 5rem;
+  a {
+    text-underline-offset: 3px;
+  }
+  /* Amounts and any figure that lines up */
+  .tnum,
+  [data-num] {
+    font-variant-numeric: tabular-nums lining-nums;
+    font-feature-settings: "tnum", "lnum";
+  }
+  code,
+  kbd,
+  .font-mono {
+    font-variant-ligatures: none;
+    font-feature-settings: "zero";
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--rule-2) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: var(--rule-2);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0.55;
+    cursor: pointer;
+  }
+  .dark input[type="date"]::-webkit-calendar-picker-indicator,
+  .dark input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+  .dark input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
   }
   @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       animation-duration: 0.01ms !important;
       transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
     }
   }
 }
 
 @layer utilities {
-  .surface-grain {
-    background-image: radial-gradient(oklch(100% 0 0 / 0.16) 1px, transparent 1px);
-    background-size: 14px 14px;
+  /* Table and figure column labels: small, medium weight, muted, sentence case */
+  .col-head {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--ink-3);
   }
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  /* Table header row: a soft band with a hairline under it */
+  .rule-head {
+    background: var(--table-head);
+    box-shadow: inset 0 -1px 0 var(--rule);
+  }
+  /* Exception texture: overdue and blocked items */
+  .hatch {
+    position: relative;
+  }
+  .hatch::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--hatch);
+    opacity: 0.14;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Print: A4 documents */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #0f172a !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+
+  /* Reports (data-print-report): print the report only — no sidebar, no header. */
+  body:has([data-print-report]) [data-slot="sidebar"],
+  body:has([data-print-report]) [data-slot="sidebar-gap"],
+  body:has([data-print-report]) .app-header {
+    display: none !important;
+  }
+  body:has([data-print-report]) [data-slot="sidebar-inset"] {
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+  body:has([data-print-report]) #main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  [data-print-report] {
+    font-size: 11px;
+  }
+  [data-print-report] tr,
+  [data-print-report] figure {
+    break-inside: avoid;
+  }
+  [data-print-report] figure,
+  [data-print-report] [class*="st-"] {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  /* Tables show every column on paper, whatever the screen breakpoints hid. */
+  [data-print-report] td.hidden,
+  [data-print-report] th.hidden {
+    display: table-cell !important;
+  }
 }

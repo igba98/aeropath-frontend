@@ -1,0 +1,50 @@
+{
+  "recordLocator": "T5MV8C",
+  "officeId": "DARTZ2100",
+  "createdAt": "2026-09-25T09:30:00.000Z",
+  "passengers": [
+    { "pnrPaxNo": 1, "surname": "MOSHA", "givenName": "DANIEL", "title": "MR", "paxType": "ADT" }
+  ],
+  "segments": [
+    {
+      "segmentNo": 2, "carrier": "TK", "flightNumber": "604", "bookingClass": "J",
+      "origin": "DAR", "destination": "IST",
+      "departureLocal": "2026-11-02T02:00", "arrivalLocal": "2026-11-02T09:55", "arrivalDayOffset": 0,
+      "statusCode": "HK", "seats": 1
+    },
+    {
+      "segmentNo": 3, "carrier": "TK", "flightNumber": "1951", "bookingClass": "J",
+      "origin": "IST", "destination": "AMS",
+      "departureLocal": "2026-11-02T12:15", "arrivalLocal": "2026-11-02T14:00", "arrivalDayOffset": 0,
+      "statusCode": "HK", "seats": 1
+    },
+    {
+      "segmentNo": 4, "carrier": "KL", "flightNumber": "1001", "bookingClass": "Y",
+      "origin": "AMS", "destination": "LHR",
+      "departureLocal": "2026-11-06T09:00", "arrivalLocal": "2026-11-06T09:15", "arrivalDayOffset": 0,
+      "statusCode": "HK", "seats": 1
+    },
+    {
+      "segmentNo": 5, "carrier": "QR", "flightNumber": "4", "bookingClass": "C",
+      "origin": "LHR", "destination": "DOH",
+      "departureLocal": "2026-11-09T21:55", "arrivalLocal": "2026-11-10T07:35", "arrivalDayOffset": 1,
+      "statusCode": "HK", "seats": 1
+    },
+    {
+      "segmentNo": 6, "carrier": "QR", "flightNumber": "1349", "bookingClass": "C",
+      "origin": "DOH", "destination": "DAR",
+      "departureLocal": "2026-11-10T09:05", "arrivalLocal": "2026-11-10T14:05", "arrivalDayOffset": 0,
+      "statusCode": "HK", "seats": 1
+    }
+  ],
+  "ticketingTimeLimit": "2026-10-20T20:59:00.000Z",
+  "tickets": [],
+  "contacts": [
+    { "type": "phone", "value": "+255754222333" },
+    { "type": "email", "value": "daniel.mosha@acme.co.tz" }
+  ],
+  "mock": {
+    "fare": { "currency": "USD", "perPax": { "1": 3860 } },
+    "queueReason": "Waitlist cleared on KL 1001. The segment is now confirmed."
+  }
+}

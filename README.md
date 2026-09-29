@@ -1,37 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aeropath back office
 
-## Getting Started
+Staff-only back office for Aeropath Travel, an air-ticketing agency in Dar es Salaam: bookings, payments, suppliers, expenses and reports. This is a **frontend prototype with no database**. All state lives in the browser (`localStorage`, key `aeropath-bo-v1`), but the domain logic is written so a real database and the Amadeus Enterprise APIs can be plugged in later without rewriting screens.
 
-First, run the development server:
+The full build spec is in [`aeropath-backoffice-spec.md`](aeropath-backoffice-spec.md). Product context is in [`PRODUCT.md`](PRODUCT.md).
+
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm test           # vitest: domain, PNR parser, providers, seed
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sign in with any demo user from the login page (any password works):
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| User | Role |
+|---|---|
+| Neema Mushi, Baraka Lema | Agent |
+| Peter Mwakalinga | Accountant |
+| Grace Kimaro | Manager |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+A Manager can reset everything to the seed from **Settings → Demo data**.
 
-## Learn More
+## Shortcuts
 
-To learn more about Next.js, take a look at the following resources:
+`N` new booking · `P` record payment · `/` or `⌘K` search (file no., client, phone, surname, PNR, ticket, receipt).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How it's built
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/domain/`: pure TypeScript business rules: types, money (integer minor units), pricing and VAT, the service-line state machine, derived file and payment status, a double-entry ledger, permissions, and one **command** per state change. Screens never mutate state; they `dispatch(command, input)`.
+- `src/providers/`: where Amadeus plugs in. `manual` (default), `amadeus-mock` (fixtures with latency and failure modes), the PNR paste parser, and the snapshot → flight line mapper. `amadeus/README.md` describes the real adapter.
+- `src/store/`: the zustand store (`dispatch`, session, persistence) and the deterministic seed, which is built by running the real commands.
+- `src/app/(app)/`: the signed-in screens. `src/app/print/`: A4 documents (invoice, quote, receipt, itinerary, statement).
+- `src/components/`: `ui/` primitives, `shared/` building blocks (data table, status chip, amount, money input, combobox…), and feature folders.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# aeropath-frontend
+The visual system ("Timetable Grid") lives in `src/app/globals.css` as CSS variables for light and dark mode.
