@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-/** Aeropath logo: the round sky-blue badge with the "A", the plane and the wave (public/aeropathlogo.png). */
+/** Aeropath logo: the round sky-blue badge with the "A", the plane and the wave. aeropathlogo.png has a see-through "A"
+ * that turns navy on the dark sidebar; icons/icon-192.png is the same badge with the "A" filled white. */
 export function BrandMark({ className, priority }: { className?: string; priority?: boolean }) {
-  return <Image src="/aeropathlogo.png" alt="" aria-hidden width={158} height={158} priority={priority} className={cn("size-6 shrink-0 rounded-full select-none", className)} draggable={false} />;
+  return <Image src="/icons/icon-192.png" alt="" aria-hidden width={192} height={192} priority={priority} className={cn("size-6 shrink-0 rounded-full select-none", className)} draggable={false} />;
 }
 
 export function BrandWordmark({ className, sub = true }: { className?: string; sub?: boolean }) {

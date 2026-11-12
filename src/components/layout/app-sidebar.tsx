@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
-import { Check, ChevronRight, ChevronsUpDown, LogOut, Monitor, Moon, Sun, Users } from "lucide-react";
+import { Check, ChevronRight, ChevronsUpDown, Download, LogOut, Monitor, Moon, Sun, Users } from "lucide-react";
 
 import type { User } from "@/domain/types";
 import { canAccessRoute } from "@/domain/permissions";
@@ -42,6 +42,7 @@ import {
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { cn } from "@/lib/utils";
 import { BrandMark } from "./brand";
+import { InstallHelpDialog, useInstallApp } from "./install-app";
 import { NAV_GROUPS, ROLE_LABEL, isActive, isChildActive, type NavItem } from "./nav";
 
 /** Menu button on the blue shell: quiet white text, a white pill when active. */
@@ -172,8 +173,10 @@ function NavUser({ user }: { user: User }) {
   const { theme, setTheme } = useTheme();
   const signOut = useApp((s) => s.signOut);
   const { isMobile } = useSidebar();
+  const app = useInstallApp();
   return (
     <SidebarMenu>
+      <InstallHelpDialog open={app.helpOpen} onOpenChange={app.setHelpOpen} />
       <SidebarMenuItem>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -215,6 +218,11 @@ function NavUser({ user }: { user: User }) {
               <DropdownMenuItem onSelect={() => router.push("/login?switch=1")}>
                 <Users className="size-4" /> Switch user (demo)
               </DropdownMenuItem>
+              {!app.installed && (
+                <DropdownMenuItem onSelect={() => void app.install()}>
+                  <Download className="size-4" /> Install app
+                </DropdownMenuItem>
+              )}
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuItem

@@ -22,6 +22,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-TZ" className={`${fontSans.variable} ${fontMono.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Chrome/Edge offer install once, often before the app's JS runs; keep it for install-app.tsx. */}
+        <script dangerouslySetInnerHTML={{ __html: `addEventListener("beforeinstallprompt",function(e){window.__installPrompt=e})` }} />
+      </head>
       <body className="min-h-dvh bg-background font-sans text-base text-foreground antialiased" suppressHydrationWarning>
         <Providers>{children}</Providers>
       </body>
