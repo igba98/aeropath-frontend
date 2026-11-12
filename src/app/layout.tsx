@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: { default: "Aeropath Back Office", template: "%s · Aeropath" },
   description: "Staff back office for Aeropath Travel: bookings, payments, suppliers and reports.",
   robots: { index: false, follow: false },
+  appleWebApp: { title: "Aeropath", statusBarStyle: "default" },
 };
 
 export const viewport: Viewport = {
